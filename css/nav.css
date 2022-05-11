@@ -24,3 +24,6 @@ nav a {
     text-decoration:none;
     color: #023e8a;
 }
+#background_audio_menu{
+    display: none;
+}
