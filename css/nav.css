@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: static;
     background: linear-gradient(to left,#00b4d8,#ade8f4);
     width: 101%;
     height: 100px;
@@ -10,6 +10,7 @@ header {
 .logo {
     float: left;
     height: 90px;
+    margin-left: 50px;
 }
 nav {
     position: absolute;
@@ -19,7 +20,7 @@ nav {
     font-weight: bolder;
     color: #023e8a;
 }
-nav ::a {
+nav a {
     text-decoration:none;
     color: #023e8a;
 }
