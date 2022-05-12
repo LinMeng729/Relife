@@ -1,0 +1,35 @@
+body {
+    background-image: url(../image/ged007.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+#background_audio_menu {
+    display: none;
+}
+#map {
+    width: 60%;
+}
+#world_map{
+    width: 100%;
+    height: auto;   
+    display: block;
+    padding: 5px;
+}
+#run{
+    width: 59.5%;
+    height: 300px;
+    background-color: #555;
+    margin-left: 20.5%;
+    margin-right: 20%;
+}
