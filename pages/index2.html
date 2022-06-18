@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,31 +14,166 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="../image/logo2.png" class="logo"></a>
-        <iframe id="background_audio_menu"  src="../audio/background_audio_index2.mp3"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="background_audio_menu" src="../audio/background_audio_index2.mp3" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <a href="index.html"><img src="../image/logo/logo2.png" class="logo"></a>
         <nav>
-           <a href="#about">聯絡我們</a>&nbsp;&nbsp;
-           <a href="#skill">關於我們</a>&nbsp;&nbsp;
-           <a href="#experience">購物車</a>&nbsp;&nbsp;
-           <a href="">會員專區</a>&nbsp;&nbsp;
-           <a href="#back">登入</a>
+            <a href="index2.html">首頁</a>&nbsp;&nbsp;
+            <a href="contect.html">聯絡我們</a>&nbsp;&nbsp;
+            <a href="aboutus.html">關於我們</a>&nbsp;&nbsp;
+            <a href="buycar.html">購物車</a>&nbsp;&nbsp;
+            <a href="vip.html">會員專區</a>&nbsp;&nbsp;
+            <a href="login.html">登入</a>
         </nav>
     </header>
+    <div class="ad">
+        <img name="advertise" src="../image/advertise/ad1.JPG" class="ad_img">
+        <script>
+            window.onload = function(){
+              setTimeout("switchImage()", 4000);
+            }
+            var current = 1;
+            var numIMG = 4;
+            function switchImage(){
+              current++;
+              // 取代照片
+              document.images['advertise'].src ='../image/advertise/ad' + current + '.jpg';
+              // 條件
+              if(current == numIMG){current =0;}
+                setTimeout("switchImage()", 4000);
+              }
+            
+        </script>
+    </div>
+    <div class="marquee">
+        <div class="text">
+            <>
+                <>
+                    <>用戶：下輩子賺大錢 已成功透過本網站轉生成中世紀國王<>
+                            <>
+                                <>
+        </div>
+    </div>
     <table align="center" id="map">
         <tr>
             <td>
-                <img src="../image/earth-web.jpg" id="world_map">
+                <img src="../image/logo/earth-web.jpg" id="world_map">
+                <a href="country3.html">
+                    <h3 id="ame">America</h3>
+                </a>
+                <a href="country1.html">
+                    <h3 id="eur">Europe</h3>
+                </a>
+                <a href="country2.html">
+                    <h3 id="chi">China</h3>
+                </a>
             </td>
         </tr>
     </table>
+    <div class="div-jisuan">
+        <section>
+            <script>
+                
+                var bszCaller,bszTag;!function(){var c,d,e,a=!1,b=[];ready=function(c){return a||"interactive"===document.readyState||"complete"===document.readyState?c.call(document):b.push(function(){return c.call(this)}),this},d=function(){for(var a=0,c=b.length;c>a;a++)b[a].apply(document);b=[]},e=function(){a||(a=!0,d.call(window),document.removeEventListener?document.removeEventListener("DOMContentLoaded",e,!1):document.attachEvent&&(document.detachEvent("onreadystatechange",e),window==window.top&&(clearInterval(c),c=null)))},document.addEventListener?document.addEventListener("DOMContentLoaded",e,!1):document.attachEvent&&(document.attachEvent("onreadystatechange",function(){/loaded|complete/.test(document.readyState)&&e()}),window==window.top&&(c=setInterval(function(){try{a||document.documentElement.doScroll("left")}catch(b){return}e()},5)))}(),bszCaller={fetch:function(a,b){var c="BusuanziCallback_"+Math.floor(1099511627776*Math.random());window[c]=this.evalCall(b),a=a.replace("=BusuanziCallback","="+c),scriptTag=document.createElement("SCRIPT"),scriptTag.type="text/javascript",scriptTag.defer=!0,scriptTag.src=a,document.getElementsByTagName("HEAD")[0].appendChild(scriptTag)},evalCall:function(a){return function(b){ready(function(){try{a(b),scriptTag.parentElement.removeChild(scriptTag)}catch(c){bszTag.hides()}})}}},bszCaller.fetch("//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback",function(a){bszTag.texts(a),bszTag.shows()}),bszTag={bszs:["site_pv","page_pv","site_uv"],texts:function(a){this.bszs.map(function(b){var c=document.getElementById("busuanzi_value_"+b);c&&(c.innerHTML=a[b])})},hides:function(){this.bszs.map(function(a){var b=document.getElementById("busuanzi_container_"+a);b&&(b.style.display="none")})},shows:function(){this.bszs.map(function(a){var b=document.getElementById("busuanzi_container_"+a);b&&(b.style.display="inline")})}};
+                
+                </script>
+                <label for="">〈Relife&重生〉 瀏覽人數 :</label>
+            <button class="jisuan"><span id='busuanzi_container_page_pv' style='display:none'><span id='busuanzi_value_page_pv'></span></span></button>
+            <form action="">
+                <label for="">搜尋 :</label>
+            <input class="jisuan" placeholder="最新消息..."></input>
+            <input type="submit" value="查詢" class="send">
+            </form>
+            
+        </section>
+    </div>
     <div class="marquee">
-          <div class="text">用戶：下輩子賺大錢  已成功透過本網站轉生成中世紀國王</div>
+        <div class="text">
+            <>
+                <>
+                    <> 關於最新的訊息想通知給您!!! <>
+                            <>
+                                <>
+        </div>
     </div>
     <div id="run">
-        跑馬燈
+        <ol class="news_text">
+            <a href="country1.html">
+                <li><strong class="area_text">[ Europe ]</strong> 剛建立新人物 , 歡迎歡迎!</li>
+            </a>
+            <a href="country2.html">
+                <li><strong class="area_text">[ China ]</strong> 剛建立新人物 , 歡迎觀看!</li>
+            </a>
+            <a href="country3.html">
+                <li><strong class="area_text">[ American ]</strong> 剛建立新人物 , 歡迎觀看!</li>
+            </a>
+            <a href="">
+                <li><strong>[ 5/14 ]</strong> 全數降價 , 5折起!</li>
+            </a>
+            <a href="person8.html">
+                <li><strong>[ 5/13 ]</strong> 剛建立新人物 , 歡迎觀看!</li>
+            </a>
+            <a href="person6.html">
+                <li><strong>[ 5/12 ]</strong> 剛建立新人物 , 歡迎觀看!</li>
+            </a>
+            <a href="person4.html">
+                <li><strong>[ 5/11 ]</strong> 剛建立新人物 , 歡迎歡迎!</li>
+            </a>
+            <a href="momad.html">
+                <li><strong>[ 5/10 ]</strong> 歡慶母親節 , 全數降價 , 4折起!!</li>
+            </a>
+            <a href="person2.html">
+                <li><strong>[ 5/9 ]</strong> 剛建立新人物 , 歡迎觀看!</li>
+            </a>
+        </ol>
+    </div>
+    <div class="index-contrac">
+        <legend class="contrac-text">最新人物</legend>
+        <div class="container_intro">
+            <div class="intro">
+                <a href="person1.html"><img src="../image/europe/nv1.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+                <a href="person7.html"><img src="../image/america/v1.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+                <a href="person8.html"><img src="../image/america/v2.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+                <a href="person4.html"><img src="../image/china/g1.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+                <a href="person5.html"><img src="../image/china/g3.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+                <!--Thêm Tiêu Đề Cho Hình Ảnh-->
+            </div>
+        </div>
+    </div>
+    <div class="index-contrac">
+        <legend class="contrac-text">熱銷榜</legend>
+        <div class="col">
+            <div class="number">1</div>
+            <a href="person1.html"><img src="../image/europe/nv1.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+            <div class="number">2</div>
+            <a href="person4.html"><img src="../image/china/g1.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+            <div class="number">3</div>
+            <a href="person5.html"><img src="../image/china/g3.png" alt="Hình Ảnh Minh Họa 1" class="img_new"></a>
+        </div>
+    </div>
+    <div>
+        <img src="../image/logo/top.png" class="bt_top" id="myBtn" title="go top"/>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+            }
+            
+            document.getElementById('myBtn').addEventListener("click", function(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            });
+        </script>
     </div>
     <footer>
         Copyright © 2022 Relife. All rights reserved.
     </footer>
 </body>
+
 </html>
