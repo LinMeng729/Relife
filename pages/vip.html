@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員專區</title>
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/vip.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="../image/logo/logo2.png" class="logo"></a>
+        <nav>
+            <a href="index2.html">首頁</a>&nbsp;&nbsp;
+            <a href="contect.html">聯絡我們</a>&nbsp;&nbsp;
+            <a href="aboutus.html">關於我們</a>&nbsp;&nbsp;
+            <a href="buycar.html">購物車</a>&nbsp;&nbsp;
+            <a href="vip.html">會員專區</a>&nbsp;&nbsp;
+            <a href="login.html">登入</a>
+        </nav>
+    </header>
+    <aside>
+        <a href="#member">修改會員資料</a>
+        <a href="addskill.html">會員超值加購</a>
+        <a href="#change">轉生紀錄查詢</a>
+    </aside>
+    <section class="area" id="member">
+        <h1>修改會員資料</h1>
+        <form action="" method="get">
+            <label class="chan-mem">帳號&nbsp;：</label>
+            <input type="text" value="aaa"><br><br>
+            <label class="chan-mem">密碼&nbsp;：</label>
+            <input type="text" value="aaa"><br><br>
+            <label class="chan-mem">姓名&nbsp;：</label>
+            <input type="text" value="芳芳"><br><br>
+            <label class="chan-mem">email：</label>
+            <input type="text" value="aaa@gmail.com"><br><br>
+            <input type="reset" value="重填" id="res">
+            <input type="button" value="傳送" id="send">
+        </form>
+    </section>
+    <section class="area" id="change">
+        <h1>轉生紀錄查詢</h1>
+        <h2>轉生日期：2022-06-16</h2>
+        <h2>訂單編號：#2022-06-1616</h2>
+        <h2>總金額：30023</h2>
+    </section>
+    <a href="index.html" id="logout"><input type="submit" value="登出" name="sbtn" class="button" /></a>
+    <div>
+        <img src="../image/logo/top.png" class="bt_top" id="myBtn" title="go top"/>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+            }
+            
+            document.getElementById('myBtn').addEventListener("click", function(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            });
+        </script>
+    </div>
+    <footer>
+        Copyright © 2022 Relife. All rights reserved.
+    </footer>
+</body>
+
+</html>
