@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品新增</title>
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/bossorder.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../image/logo/logo2.png" class="logo"/>
+        <nav class="back-nav">
+            <a href="bossitem.html">產品管理</a>&nbsp;&nbsp;
+            <a href="bossorder.html">訂單管理</a>&nbsp;&nbsp;
+            <a href="bossmember.html">會員管理</a>&nbsp;&nbsp;
+            <a href="index.html">登出</a>
+        </nav>
+    </header>
+    <h1>會員管理</h1>
+    <section>
+        
+        <form action="" method="post">
+            <article>
+                <input type="submit" value="刪除會員" class="byby">
+                <p name="num">會員編號：1</p>   
+                <p>帳號：aaa</p>
+                <p>密碼：aaa</p>
+                <p>姓名：芳芳</p>
+                <p><input type="hidden" name="mail" value="<%=tmp.getString(5)%>">email：aaa@gmail.com</p>
+                
+            </article>
+        </form>
+    </section>
+    <footer id="footer">
+        Copyright © 2022 Relife. All rights reserved.
+    </footer>
+</body>
+</html>

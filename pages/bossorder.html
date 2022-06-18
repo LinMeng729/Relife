@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單管理</title>
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/bossorder.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../image/logo/logo2.png" class="logo"/>
+        <nav class="back-nav">
+            <a href="bossitem.html">產品管理</a>&nbsp;&nbsp;
+            <a href="bossorder.html">訂單管理</a>&nbsp;&nbsp;
+            <a href="bossmember.html">會員管理</a>&nbsp;&nbsp;
+            <a href="index.html">登出</a>
+        </nav>
+    </header>
+    <h1>訂單管理</h1>
+    <section>
+        
+        <img src="../image/europe/nv1.png" class="person-pic">
+        <article>
+            <p>訂單編號：#2022-06-1724</p>   <!-- 隨便寫的，你們在看用什麼邏輯寫 -->
+            <p>收件人姓名：今天賺大錢</p>
+            <p>購買商品：中世紀國王</p>
+            <p>售價：$49999</p>
+            <p>數量：1</p>
+            <p>訂單總額(含運費)：$50023</p>
+        </article>
+    </section>
+    <div>
+        <img src="../image/logo/top.png" class="bt_top" id="myBtn" title="go top"/>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+            }
+            
+            document.getElementById('myBtn').addEventListener("click", function(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            });
+        </script>
+    </div>
+    <footer>
+        Copyright © 2022 Relife. All rights reserved.
+    </footer>
+</body>
+</html>

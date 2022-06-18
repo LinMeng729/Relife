@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品管理</title>
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/bossitem.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../image/logo/logo2.png" class="logo"/>
+        <nav class="back-nav">
+            <a href="bossitem.html">產品管理</a>&nbsp;&nbsp;
+            <a href="bossorder.html">訂單管理</a>&nbsp;&nbsp;
+            <a href="bossmember.html">會員管理</a>&nbsp;&nbsp;
+            <a href="index.html">登出</a>
+        </nav>
+    </header>
+    <section>
+        <table align="center">
+            <tr id="title">
+                <th>人物圖片</th>
+                <th>商品編號</th>
+                <th>增/刪</th>
+                <th>商品名稱</th>
+                <th>商品售價</th>
+                <th>商品庫存</th>
+                <th></th>
+            </tr>
+            <form name="form1" method="post" action="" >
+            <tr>
+                <td><img src="../image/america/v1.png" height="50px" length="50px"></td>
+                <td><input type="text"  name="num" value="1"></td>
+                <td>
+                    <input type="checkbox"  class="c01 uu-2 checkbox_add" name="launch" value="v" checked="true" height="50px" length="50px">
+                </td>
+                <td><input type="text" name="person" value="最強盾手"></td>
+                <td><input type="text" name="price" value="49999"></td>
+                <td><input type="text" name="quan" value="14"></td>
+                
+                <td><input type="submit"  value="修改" class="button"></td>
+            </tr>
+            <tr>
+                <td><img src="../image/america/v2.png" height="50px" length="50px"></td>
+                <td><input type="text"  name="num" value="2"></td>
+                <td>
+                    <input type="checkbox"  class="c01 uu-2 checkbox_add" name="launch" value="v" checked="true" height="50px" length="50px">
+                </td>
+                <td><input type="text" name="person" value="神祕殺手"></td>
+                <td><input type="text" name="price" value="39999"></td>
+                <td><input type="text" name="quan" value="18"></td>
+                
+                <td><input type="submit"  value="修改" class="button"></td>
+            </tr>
+            </form>
+            </table>
+    </section>
+    
+    <footer id="footer">
+        Copyright © 2022 Relife. All rights reserved.
+    </footer>
+</body>
+</html>
