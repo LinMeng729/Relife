@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最強盾手</title>
+    <style>
+      @import url("../css/person7.css");
+      @import url("../css/nav.css");
+      @import url("../css/footer.css");
+      @import url("../css/person.css");
+      @import url(netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="../image/logo/logo2.png" class="logo"
+      /></a>
+      <nav>
+        <a href="index2.html">首頁</a>&nbsp;&nbsp;
+        <a href="contect.html">聯絡我們</a>&nbsp;&nbsp;
+        <a href="aboutus.html">關於我們</a>&nbsp;&nbsp;
+        <a href="buycar.html">購物車</a>&nbsp;&nbsp;
+        <a href="vip.html">會員專區</a>&nbsp;&nbsp;
+        <a href="login.html">登入</a>
+      </nav>
+    </header>
+    <div class="col">
+      <img src="../image/america/v1.png" class="pic" />
+      <div class="next"></div>
+      <h1 class="name">~最強盾手~</h1>
+      <p class="sen">「放心吧！我會保護好你們。」</p>
+      <div class="skill" id="skill">
+        <ul>
+          <li>
+            <div class="skillname">體能</div>
+            <div class="loading">
+              <div id="sk1">&nbsp;&nbsp;80%</div>
+            </div>
+          </li>
+          <li>
+            <div class="skillname">智慧</div>
+            <div class="loading">
+              <div id="sk2">&nbsp;&nbsp;60%</div>
+            </div>
+          </li>
+          <li>
+            <div class="skillname">金錢</div>
+            <div class="loading">
+              <div id="sk3">&nbsp;&nbsp;50%</div>
+            </div>
+          </li>
+          <li>
+            <div class="skillname">威信</div>
+            <div class="loading">
+              <div id="sk4">&nbsp;&nbsp;80%</div>
+            </div>
+          </li>
+          <li>
+            <div class="skillname">戰力</div>
+            <div class="loading">
+              <div id="sk5">&nbsp;&nbsp;70%</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="next2"></div>
+      <br /><br /><br /><br />
+      <h2>角色故事</h2>
+      <p class="story">
+        他是團隊中的最強盾手，也是bass手，他和團隊是5人的小冒險傭兵團，
+        邊旅行邊作為樂隊活動，作為團長，他備受團員的愛戴。
+      </p>
+      <h1 class="price">$49999</h1>
+      <a href="buycar.html"><input type="submit" value="購買" name="sbtn" class="button" /></a>
+    </div>
+    <section>
+      <h2>使用體驗</h2>
+      <form action="" method="post">
+        <table border="1">
+          <tr>
+            <th>用戶</th>
+            <td>今天賺大錢</td>
+          </tr>
+          <tr>
+            <th>留言</th>
+            <td>
+              <textarea name="customer_cmt" rows="4" cols="50">留言...</textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>評價</th>
+            <td>
+              <div id="rating" name="ctm_score">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label class="full" for="star5" title="非常滿意 5 星星"></label>
+
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label class="full" for="star4" title="滿意 4 星星"></label>
+
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label class="full" for="star3" title="覺得還行 3星星"></label>
+
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label class="full" for="star2" title="要價強 2 星星"></label>
+
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label class="full" for="star1" title="不滿意 1 星星"></label>
+                <script>
+                  function calcRate(r) {
+                    const f = ~~r, //Tương tự Math.floor(r)
+                      id = "star" + f + (r % f ? "half" : "");
+                    id && (document.getElementById(id).checked = !0);
+                  }
+                </script>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="傳送" class="action_btn" />
+        <input type="reset" value="刪除" class="action_btn" />
+      </form>
+    </section>
+    <div>
+      <img src="../image/logo/top.png" class="bt_top" id="myBtn" title="go top" />
+      <script>
+        window.onscroll = function () {
+          scrollFunction();
+        };
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 600 ||
+            document.documentElement.scrollTop > 600
+          ) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        document.getElementById("myBtn").addEventListener("click", function () {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+      </script>
+    </div>
+    <footer>Copyright © 2022 Relife. All rights reserved.</footer>
+  </body>
+</html>
