@@ -59,3 +59,16 @@ input {
     font-weight: bolder;
     border-radius: 5px;
 }
+#back {
+    margin: 100px 20px 10px 50%;
+    position: absolute;
+    bottom: 100px;
+    padding: 10px 20px;
+    background-color: #a8dadc;
+    color: #023e8a;
+    font-size: 20px;
+    border: #023e8a 3px solid;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-decoration: none;
+}
