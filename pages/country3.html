@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America</title>
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/country3.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="../image/logo/logo2.png" class="logo"></a>
+        <nav>
+            <a href="index2.html">首頁</a>&nbsp;&nbsp;
+            <a href="contect.html">聯絡我們</a>&nbsp;&nbsp;
+            <a href="aboutus.html">關於我們</a>&nbsp;&nbsp;
+            <a href="buycar.html">購物車</a>&nbsp;&nbsp;
+            <a href="vip.html">會員專區</a>&nbsp;&nbsp;
+            <a href="login.html">登入</a>
+        </nav>
+    </header>
+    <div class="col">
+        <p>最強盾手</p>
+        <p>神祕殺手</p>
+        <p>弓箭手</p>
+    </div>
+    <table align="center" class="person-table" id="person1">
+        <tr>
+            <td>
+                <div class="flip-container" ontouchstart="this.classList.toggle(`hover`);">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="../image/america/v1.png" class="pic">
+                        </div>
+                        <div class="back">
+                            <br><br><br><br>
+                            「放心吧！我會保護好你們。」<br><br><br><br><br>
+                            庫存:20
+                            <br><br><br><br><br><br><br><br>
+                            <a href="person7.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table align="center" class="person-table" id="person2">
+        <tr>
+            <td>
+                <div class="flip-container" ontouchstart="this.classList.toggle(`hover`);">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="../image/america/v2.png" class="pic">
+                        </div>
+                        <div class="back">
+                            <br><br><br><br>
+                            「你的項上人頭，我帶走了。」<br><br><br><br><br>
+                            庫存:20
+                            <br><br><br><br><br><br><br><br>
+                            <a href="person8.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table align="center" class="person-table" id="person3">
+        <tr>
+            <td>
+                <div class="flip-container" ontouchstart="this.classList.toggle(`hover`);">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="../image/america/v3.png" class="pic">
+                        </div>
+                        <div class="back">
+                            <br><br><br><br>
+                            「正中靶心？那不是超簡單的事嗎？」<br><br><br><br><br>
+                            庫存:20
+                            <br><br><br><br><br><br><br><br>
+                            <a href="person9.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <img src="../image/logo/top.png" class="bt_top" id="myBtn" title="go top"/>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+            }
+            
+            document.getElementById('myBtn').addEventListener("click", function(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            });
+        </script>
+    </div>
+    <footer>
+        Copyright © 2022 Relife. All rights reserved.
+    </footer>
+</body>
+
+</html>
