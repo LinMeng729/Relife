@@ -13,7 +13,6 @@ header {
 .logo {
     float: left;
     height: 90px;
-    width: auto;
     margin-left: 50px;
     display: block;
 }
@@ -29,5 +28,5 @@ nav a {
 }
 .back-nav {
     position: absolute;
-    left: 1000px;
+    left: 920px;
 }

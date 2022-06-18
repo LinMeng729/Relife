@@ -8,4 +8,13 @@ footer {
     margin: -8px;
     font-family: Papyrus;
     font-weight: bolder;
+    clear: both;
+}
+#footer {
+    position: fixed;
+}
+.bt_top{
+    float: right;
+    margin: -150px 50px 50px 0;
+    width:90px;
 }
