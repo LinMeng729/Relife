@@ -1,14 +1,38 @@
 body {
-    background-image: url(../image/background/ged009.jpg);
+    background-image: url(../image/background/ponyo023.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: 100%;
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
 }
-.bt_top{
-    position: relative;
-    left: 1400px;
-    width:90px;
-    margin-bottom: 30px;
+.country {
+    width: 29%;
+    -webkit-column-break-after: always;
+    margin-bottom: 50px;
+    margin-top: 10%;
+    background-color: rgba(33, 158, 188, .6);
+}
+#con1 {
+    float: left;
+    margin-left: 50px;
+}
+#con2 {
+    float: left;
+    margin-left: 45px;
+}
+#con3 {
+    float: right;
+    margin-right: 50px;
+}
+p {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+a {
+    text-decoration:none;
+    color: #023e8a;
+
 }
